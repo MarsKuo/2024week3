@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+</head>
+
+<body>
+
+  <%- include('./layout/header.ejs') %>
+
+
+    <div style="height: 100px;"></div>
+
+    <footer class="footer bg-primary ">
+      <div class="container d-flex justify-content-between mb-5">
+        <nav class="info">
+          <ul class="text-white d-flex  align-items-center">
+            <li><a class="py-5" href="#">首頁</a></li>
+            <li><a class="py-5" href="#">系列鏡框</a></li>
+            <li><a class="py-5" href="#">門市據點</a></li>
+            <li><a class="py-5" href="#">部落格</a></li>
+            <li><a class="py-5" href="#">常見問題</a></li>
+          </ul>
+
+          <div class="tel">
+            <span class="material-symbols-outlined">
+              call
+            </span>
+            <span class="txt">0800-000-000</span>
+          </div>
+          <div class="mail">
+            <span class="material-symbols-outlined">
+              mail
+            </span>
+            <span class="txt">glasses@business.com</span>
+
+          </div>
+        </nav>
+        <div class="social d-flex">
+          <a href="#"><img src="../assets/images/ic-social-fb.png" alt=""></a>
+          <a href="#"><img src="../assets/images/ic_social_ig.png" alt=""></a>
+          <a href="#"><img src="../assets/images/ic_social_line.png" alt=""></a>
+        </div>
+
+
+      </div>
+      <hr>
+      <div class=" Copyright container d-flex  text-white justify-content-between">
+        <p>Copyright © 2020 Glasses.All rights reserved.</p>
+        <nav>
+          <ul class="d-flex">
+            <li><a href="#">隱私權政策</a></li>
+            <li class="ml-6"><a href="#">服務條款</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>
