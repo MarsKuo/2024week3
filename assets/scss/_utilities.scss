@@ -2,6 +2,7 @@
   max-width: 1320px;
   //12*86 + 11 * 24 + 24
   margin: 0 auto;
+  padding: 0 $gutter;
 }
 
 @media (max-width: 768px) {
@@ -14,7 +15,6 @@
   .container {
     max-width: 372px;
     //4*69 + 3 * 24 + 24
-    padding: 0 $gutter;
   }
 }
 

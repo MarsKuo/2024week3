@@ -40,19 +40,16 @@
     margin-bottom: 28px;
   }
   .info li {
-    margin-right: 48px;
+    // margin-right: 48px;
 
     a {
+      padding: 24px;
       &:hover {
         color: blue;
       }
     }
   }
-  @media (max-width: 768px) {
-    .info li {
-      margin-right: 48px;
-    }
-  }
+
 
   .tel,
   .mail {
@@ -68,7 +65,8 @@
     margin-left: 32px;
   }
   .Copyright {
-    padding: 32px 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   @media (max-width: 768px) {
@@ -80,7 +78,8 @@
 @media (max-width: 768px) {
   .footer {
     font-size: 16px;
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
     span {
       font-size: 36px;
     }
@@ -89,7 +88,6 @@
 @media (max-width: 375px) {
   .footer {
     font-size: 16px;
-    padding: 24px 0;
     .container {
       margin-bottom: 0px;
     }
@@ -115,7 +113,8 @@
       display: none;
     }
     .container {
-      padding: 20px 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
     .Copyright {
       flex-wrap: wrap;
