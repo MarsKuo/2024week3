@@ -1,0 +1,134 @@
+$max: 15;
+
+@for $i from 0 through $max {
+  .mb-#{$i} {
+    margin-bottom: $i * 4px;
+  }
+  .me-#{$i} {
+    margin-right: $i * 4px;
+  }
+  .ms-#{$i} {
+    margin-left: $i * 4px;
+  }
+  .mt-#{$i} {
+    margin-top: $i * 4px;
+  }
+  .pb-#{$i} {
+    padding-bottom: $i * 4px;
+  }
+  .pt-#{$i} {
+    padding-top: $i * 4px;
+  }
+  .pe-#{$i} {
+    padding-right: $i * 4px;
+  }
+  .ps-#{$i} {
+    padding-left: $i * 4px;
+  }
+  .py-#{$i} {
+    padding-top: $i * 4px;
+    padding-bottom: $i * 4px;
+  }
+  .px-#{$i} {
+    padding-left: $i * 4px;
+    padding-right: $i * 4px;
+  }
+  .p-#{$i} {
+    padding: $i * 4px;
+  }
+}
+
+//mobile-larger
+@include pad {
+  @for $i from 0 through $max {
+    .mb-md-#{$i} {
+      margin-bottom: $i * 4px;
+    }
+    .me-md-#{$i} {
+      margin-right: $i * 4px;
+    }
+    .ms-md-#{$i} {
+      margin-left: $i * 4px;
+    }
+    .mt-md-#{$i} {
+      margin-top: $i * 4px;
+    }
+    .pb-md-#{$i} {
+      padding-bottom: $i * 4px;
+    }
+    .pt-md-#{$i} {
+      padding-top: $i * 4px;
+    }
+    .pe-md-#{$i} {
+      padding-right: $i * 4px;
+    }
+    .ps-md-#{$i} {
+      padding-left: $i * 4px;
+    }
+    .px-md-#{$i} {
+      padding-left: $i * 4px;
+      padding-right: $i * 4px;
+    }
+    .py-md-#{$i} {
+      padding-top: $i * 4px;
+      padding-bottom: $i * 4px;
+    }
+    .p-md-#{$i} {
+      padding: $i * 4px;
+    }
+  }
+}
+
+@include mobile-larger {
+  @for $i from 0 through $max {
+    .mb-sm-#{$i} {
+      margin-bottom: $i * 4px;
+    }
+    .me-sm-#{$i} {
+      margin-right: $i * 4px;
+    }
+    .ms-sm-#{$i} {
+      margin-left: $i * 4px;
+    }
+    .mt-sm-#{$i} {
+      margin-top: $i * 4px;
+    }
+    .pb-sm-#{$i} {
+      padding-bottom: $i * 4px;
+    }
+    .pt-sm-#{$i} {
+      padding-top: $i * 4px;
+    }
+    .pe-sm-#{$i} {
+      padding-right: $i * 4px;
+    }
+    .ps-sm-#{$i} {
+      padding-left: $i * 4px;
+    }
+    .px-sm-#{$i} {
+      padding-left: $i * 4px;
+      padding-right: $i * 4px;
+    }
+    .py-sm-#{$i} {
+      padding-top: $i * 4px;
+      padding-bottom: $i * 4px;
+    }
+    .p-sm-#{$i} {
+      padding: $i * 4px;
+    }
+  }
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+.ms-auto {
+  margin-left: auto;
+}
+.me-auto {
+  margin-right: auto;
+}
+
+.h-100 {
+  height: 100%;
+}

@@ -1,3 +1,138 @@
-.index-title {
-  font-size: 100px;
+.banner {
+  height: calc(100vh - 72px);
+  background-size: cover;
+  background-image: url(../images/home-header.png);
+  color: white;
+
+  @include mobile {
+    height: calc(100vh - 72px);
+  }
+
+  button {
+    padding: 6px 12px;
+    color: #fff;
+    background-color: $primary-color;
+  }
+}
+// .desc
+.desc {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  h3 {
+    font-size: 48px;
+  }
+  @include mobile-larger {
+    font-size: 24px;
+  }
+  img {
+    width: 84px;
+    height: 84px;
+  }
+}
+.product {
+  padding-bottom: 80px;
+  font-size: 48px;
+  @include pad {
+    img {
+      max-width: 348px;
+    }
+  }
+  @include mobile {
+    img {
+      width: 100%;
+    }
+  }
+}
+.special {
+  min-height: 608px;
+  padding-top: 80px;
+  // padding-bottom: 80px;
+  background-image: url(../images/index-bg.png);
+  background-position: top;
+  background-size: cover;
+  @include pad {
+    background-image: url(../images/index-bg-md.png);
+    background-position: top;
+  }
+  @include mobile-larger {
+    background-image: url(../images/index-bg-sm.png);
+  }
+
+  font-size: 48px;
+  .item {
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+  }
+  .item1 {
+    background-image: url(../images/home-section4-1.png);
+  }
+  .item2 {
+    background-image: url(../images/home-section4-2.png);
+  }
+  @include mobile-larger {
+    .item1 {
+      background-image: url(../images/home-section4-1-sm.png);
+    }
+    .item2 {
+      background-image: url(../images/home-section4-2-sm.png);
+    }
+  }
+  h4 {
+    background-color: #fff;
+  }
+  .card:nth-child(1) {
+    padding-right: 0;
+  }
+  .card:nth-child(2) {
+    padding-left: 0;
+  }
+  @include pad {
+    .card:nth-child(1) {
+      padding-right: $gutter;
+    }
+    .card:nth-child(2) {
+      padding-left: $gutter;
+    }
+  }
+}
+
+.recommend {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  small {
+    color: #707070;
+  }
+  .card {
+    box-shadow: 0px 2px 1px #00000029;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    // min-height: 511px;
+  }
+  .info {
+    min-height: 205px;
+  }
+}
+
+.contactus {
+  background-color: #fbf2f2;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: $gutter;
+  padding-right: $gutter;
+  p {
+    font-size: 20px;
+  }
+  .item {
+    max-width: 636px;
+    margin: 0 auto;
+  }
+  .btn {
+    width: 80%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
 }

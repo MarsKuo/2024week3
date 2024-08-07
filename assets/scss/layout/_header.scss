@@ -1,4 +1,53 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header {
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mobile {
+      flex-direction: column;
+      align-items: stretch;
+      ul {
+        width: 100%;
+      }
+    }
+  }
+
+  .logo {
+    padding: 12px 0px;
+    img {
+      width: 80px;
+      height: 48px;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  li > a {
+    padding: 20px;
+    &:hover {
+      background-color: blue;
+    }
+  }
+  @include mobile {
+    li {
+      width: 50%;
+      border: 1px solid #fff;
+    }
+    a {
+      text-align: center;
+    }
+  }
+}
+
+.logo {
+  position: relative;
+  .visually-hidden {
+    position: absolute;
+    top: 0;
+
+    display: inline-block;
+    text-indent: -9999px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 }

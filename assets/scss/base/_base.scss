@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  // outline: 1px solid red
+}
+body {
+  line-height: 1.5;
+  font-size: 1rem;
+  font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}

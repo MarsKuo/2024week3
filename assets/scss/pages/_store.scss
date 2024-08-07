@@ -1,0 +1,18 @@
+.stores {
+  padding-top: 96px;
+  padding-bottom: 80px;
+
+  select {
+    width: 300px;
+  }
+  .card {
+    border: 1px solid rgba(0, 0, 0, 0.13);
+  }
+  .item {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .btn {
+    cursor: pointer;
+  }
+}
