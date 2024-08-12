@@ -35,11 +35,20 @@
   background-color: #000;
 }
 .d-flex {
-  display: flex;
+  display: flex !important;
 }
 .d-block {
-  display: block;
+  display: block !important;
 }
+.d-none {
+  display: none !important;
+}
+.d-sm-none {
+  @include mobile {
+    display: none !important;
+  }
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -75,6 +84,39 @@
 .text-left {
   text-align: left;
 }
+
+.text-md-center {
+  @include pad {
+    text-align: center;
+  }
+}
+.text-sm-center {
+  @include mobile {
+    text-align: center;
+  }
+}
+.text-md-right {
+  @include pad {
+    text-align: right;
+  }
+}
+.text-sm-right {
+  @include mobile {
+    text-align: right;
+  }
+}
+
+.text-md-left {
+  @include pad {
+    text-align: left;
+  }
+}
+.text-sm-left {
+  @include mobile {
+    text-align: left;
+  }
+}
+
 .text-primary {
   color: $primary-color;
 }
@@ -116,7 +158,15 @@
 .fs-4 {
   font-size: 64px;
 }
-
+.fs-32 {
+  font-size: 32px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-16 {
+  font-size: 16px;
+}
 .form-control {
   display: block;
   width: 100%;
@@ -128,10 +178,24 @@
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
 }
-.border-line {
+.border-1 {
+  border: 1px solid rgba(0, 0, 0, 0.13);
+}
+.border-left-line {
   border-left: 8px solid #9f1213;
+}
+.border-bottom-line {
+  border-bottom: 8px solid #9f1213;
 }
 
 .vertical-align-middle {
   vertical-align: middle;
+}
+.page-link {
+  &[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #f2f2f2;
+  }
 }

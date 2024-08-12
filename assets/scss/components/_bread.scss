@@ -1,0 +1,25 @@
+.breadcrumb {
+  display: flex;
+  li {
+    position: relative;
+    margin-right: 5px;
+  }
+
+  li {
+    a::after {
+      content: '/';
+      margin-left: 5px;
+      color: #ccc;
+    }
+  }
+
+  li:last-child {
+    a {
+      content: '';
+    }
+  }
+
+  .active {
+    color: $primary-color;
+  }
+}

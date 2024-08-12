@@ -1,0 +1,21 @@
+.pagination {
+  display: flex;
+  .active {
+    background-color: black;
+    color: white;
+  }
+
+  li {
+    border: 1px solid rgba(220, 220, 220, 1);
+    &:hover {
+      background-color: blue;
+      color: white;
+    }
+  }
+  .page-link {
+    padding: 12px 16px;
+    @include mobile-larger {
+      padding: 10px 10px;
+    }
+  }
+}

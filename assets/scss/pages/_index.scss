@@ -4,8 +4,14 @@
   background-image: url(../images/home-header.png);
   color: white;
 
-  @include mobile {
+  @include mobile-larger {
     height: calc(100vh - 72px);
+    h2 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 24px;
+    }
   }
 
   button {
@@ -112,6 +118,11 @@
   .info {
     min-height: 205px;
   }
+  img {
+    @include mobile-larger {
+      width: 100%;
+    }
+  }
 }
 
 .contactus {
@@ -128,9 +139,13 @@
     margin: 0 auto;
   }
   .btn {
+    cursor: pointer;
     width: 80%;
     padding-top: 16px;
     padding-bottom: 16px;
+    @include mobile-larger {
+      width: 100%;
+    }
     &:hover {
       background-color: darken($primary-color, 10%);
     }

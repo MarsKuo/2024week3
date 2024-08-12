@@ -1,0 +1,116 @@
+.blog-header {
+  height: 56px;
+  background-color: #650300;
+  .item {
+    ul {
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+  .page-link {
+    color: #fff;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 24px;
+    padding-left: 24px;
+    font-size: 20px;
+    &:hover {
+      background-color: blue;
+    }
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+}
+
+.blog {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .row {
+    margin-bottom: 60px;
+  }
+  .item {
+    height: 100%;
+    a {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: right;
+      color: #650300;
+    }
+  }
+  h3 {
+    font-size: 32px;
+  }
+
+  span {
+    font-size: 20px;
+  }
+  small {
+    font-size: 16px;
+  }
+  @include pad {
+    .row {
+      margin-bottom: 24px;
+    }
+    .item {
+      height: auto;
+      a {
+        font-size: 16px;
+        // font-weight: bold;
+        text-align: right;
+        color: inherit;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    .img {
+      height: 100%;
+    }
+    h3 {
+      font-size: 24px;
+    }
+
+    span {
+      font-size: 16px;
+    }
+    small {
+      font-size: 16px;
+    }
+  }
+  @include mobile-larger {
+    .row {
+      flex-direction: column;
+    }
+    .item {
+      padding-top: 8px;
+      p,
+      a {
+        display: none;
+      }
+    }
+  }
+}
+
+.blog-detail {
+  padding-top: 24px;
+  padding-bottom: 80px;
+  .share {
+    display: flex;
+    align-items: center;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+  @include mobile {
+    h2 {
+      font-size: 24px;
+    }
+  }
+}

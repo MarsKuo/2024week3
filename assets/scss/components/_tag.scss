@@ -1,0 +1,28 @@
+.tag-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: $primary-color;
+}
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    position: relative;
+    margin-right: 15px;
+  }
+
+  li {
+    a::before {
+      content: '#';
+      color: $primary-color;
+    }
+  }
+
+  a {
+    color: $primary-color;
+    font-weight: bold;
+    &:hover {
+      color: blue;
+    }
+  }
+}

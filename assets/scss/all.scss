@@ -16,5 +16,14 @@
 
 @import './layout/header';
 @import './layout/footer';
+
+@import './components/pagination';
+@import './components/bread';
+@import './components/tag';
+
 @import './pages/index.scss';
 @import './pages/store.scss';
+@import './pages/store2.scss';
+@import './pages/product.scss';
+@import './pages/qa.scss';
+@import './pages/blog.scss';
